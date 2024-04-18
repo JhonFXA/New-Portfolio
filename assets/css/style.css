@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: auto;
+}
+
+::-webkit-scrollbar-track{
+    width: auto;
+}
+
+::-webkit-scrollbar-thumb{
+    width: auto;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: auto;
+}
+
+.btn{
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+.btn>i{
+    margin-left: 10px;
+}
+
+i{
+    font-size: 16px;
+}
+
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    border-bottom: solid 2px;
+    line-height: 90px;
+    z-index: 100;
+    padding-inline: 9vw;
+}
+
+.nav-menu, .menu-list{
+    display: flex;
+    position: relative;
+}
+
+.menu-link{
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
+}
+
+.menu-btn{
+    display: none;
+    background: none;
+}
+
+.menu-btn ion-icon{
+    font-size: 28px;
+}
