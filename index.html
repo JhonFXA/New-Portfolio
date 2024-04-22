@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="header">
             <nav id="nav-menu" class="nav-menu">
                 <ul class="menu-list">
                     <li class="menu-element">
@@ -35,7 +35,41 @@
             <button class="menu-btn" onclick="toggleMenu()"><ion-icon name="menu-outline"></ion-icon></button>
             
         </header>
-        <main></main>
+        <main>
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Jonathan Henrique</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>Sou <span class="typedText">Desenvolvedor</span>.</p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo natus voluptatum inventore delectus esse tempore.</p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn green-btn">Me contrate</button>
+                        <button class="btn">Baixar CV<i class="fa-solid fa-file-arrow-down"></i></button>
+                    </div>
+                    <div class="social-icons">
+                        <a class="icon-box" href="https://www.github.com/JhonFXA" target="_blank"><ion-icon class="icon" name="logo-github"></ion-icon></a>
+                        <a class="icon-box" href=""><ion-icon class="icon" name="logo-linkedin" target="_blank"></ion-icon></a>
+                        <a class="icon-box" href="https://www.youtube.com/JhonFXA" target="_blank"><ion-icon class="icon" name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/img/SP-Jhon.png" alt="avatar">
+                    </div>
+                </div>
+                <div id="scroll-btn" class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                        <p>Descer</p>
+                    </a>
+                </div>
+            </section>    
+        </main>
         <footer></footer>
     </div>
     <script src="assets/js/main.js"></script>
