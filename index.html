@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jonathan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="menu-list">
+                    <li class="menu-element">
+                        <a href="#home" onclick="toggleMenu()" class="menu-link">Início</a>
+                    </li>
+                    <li class="menu-element">
+                        <a href="#about"  onclick="toggleMenu()" class="menu-link">Sobre</a>
+                    </li>
+                    <li class="menu-element">
+                        <a href="#projects"  onclick="toggleMenu()" class="menu-link">Projetos</a>
+                    </li>
+                    <li class="menu-element">
+                        <a href="#contact"  onclick="toggleMenu()" class="menu-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-btn" onclick="toggleMenu()"><ion-icon name="menu-outline"></ion-icon></button>
+            
+        </header>
+        <main>
+            <!-- ================ FEATURED ================== -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <p class="featured-text-card">
+                        Olá, Meu Nome é <span> Jonathan</span>
+                    </p>
+                    <div class="featured-name">
+                        <h1>Sou <span class="typedText"></span>.</h1>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>"Todo dia é uma nova chance de vencer o meu eu de ontem e me aproximar da melhor versão de mim mesmo."</p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <a href="#contact" class="btn green-btn">Me contrate</a>
+                    </div>
+                    <div class="social-icons">
+                        <a title="GitHub" class="icon-box" href="https://www.github.com/JhonFXA" target="_blank"><ion-icon class="icon-social" name="logo-github"></ion-icon></a>
+                        <a title="LinkedIn" class="icon-box" href="https://www.linkedin.com/in/jonathanhenrique256" target="_blank"><ion-icon class="icon-social" name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/img/SP-Jhon.png" alt="avatar" draggable="false">
+                    </div>
+                </div>
+                <div id="scroll-btn" class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                        <p>Descer</p>
+                    </a>
+                </div>
+            </section>    
+            <!-- ================ ABOUT ME ================== -->
+            <section class="about" id="about">
+                <div class="top-header">
+                    <h2>Sobre Mim</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>Introdução</h3>
+                            <p>Meu nome é Jonathan Henrique e sou um desenvolvedor estudante de Ciência da Computação. Este site é uma forma de compartilhar meus projetos e experiências com você. Aqui, você encontrará uma seleção de trabalhos que tenho realizado ao longo da minha trajetória acadêmica e profissional. Cada projeto foi criado com muito empenho, tentando usar das melhores técnicas de desenvolvimento 😊.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <h3>Habilidades e Tecnologias</h3>
+                            <ul class="skills-list">
+                                <li><img class="icon" aria-hidden="true" src="assets/img/html-icon.png" alt="">HTML</li>
+                                <li><img class="icon" aria-hidden="true" src="assets/img/css-icon.png" alt="">CSS</li>
+                                <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                                <li><img class="icon" aria-hidden="true" src="assets/img/C-icon.png" alt="">C</li>
+                                <li><img class="icon" src="assets/img/java-icon.png" aria-hidden="true" alt="">Java</li>
+                                <li><i class="fa-brands fa-git-alt"></i>Git</li>
+                                <li><i class="fa-brands fa-github"></i>GitHub</li>
+                                <li><img class="icon" aria-hidden="true" src="assets/img/vscode-icon.png" alt="">VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ PROJECTS ================== -->
+            <section class="projects" id="projects">
+                <div class="top-header">
+                    <h2>Projetos</h2>
+                </div>
+                <div class="project-container">
+                    <div class="panel-control">
+                        <div>
+                            <button class="change-grid-btn" id="change-grid" onclick="changeGrid()">
+                                <ion-icon name="grid-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button id="left-arrow" class="slide-nav-button slide-nav-previous fa-solid fa-angle-left" data-slide="nav-previous-button"></button>
+                    <button id="right-arrow" class="slide-nav-button slide-nav-next fa-solid fa-angle-right" data-slide="nav-next-button"></button>
+
+                    <div class="slide-wrapper" data-slide="wrapper">
+                        <ul class="slide-list" data-slide="list">
+                            <li class="slide-item" data-slide="item" data-index="0">
+                                <div class="slide-content">
+                                    <img class="slide-image" src="assets/img/newsletter.png" alt="Newsletter Form">
+                                    <div class="slide-tools">
+                                        <img class="tool" src="assets/img/html-icon.png" alt="" title="HTML5">
+                                        <img class="tool" src="assets/img/css-icon.png" alt="" title="CSS3">
+                                        <img class="tool" src="assets/img/javascript-icon.png" alt="" title="JavaScript">
+                                    </div>
+                                    <div class="slide-description">
+                                        <h3>Newsletter Form</h3>
+                                        <p class="slide-project-info">Formulário de cadastro com validador de email.</p>
+                                        <div class="slide-buttons">
+                                            <a class="slide-btn slide-test-btn" href="https://jhonfxa.github.io/Newsletter-sign-up-form/" target="_blank" title="Testar o site">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            </a>
+                                            <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/Newsletter-sign-up-form" target="_blank" title="Ver repositório">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="slide-item" data-slide="item" data-index="1">
+                                <div class="slide-content">
+                                    <div class="slide-tools">
+                                        <img class="tool" src="assets/img/html-icon.png" alt="" title="HTML5">
+                                        <img class="tool" src="assets/img/css-icon.png" alt="" title="CSS3">
+                                        <img class="tool" src="assets/img/javascript-icon.png" alt="" title="JavaScript">
+                                    </div>
+                                    <img class="slide-image" src="assets/img/demonslayergame.png" alt="Demon Slayer Game">
+                                    <div class="slide-description">
+                                        <h3>Demon Slayer Game</h3>
+                                        <p class="slide-project-info">Projeto de jogo de Demon Slayer, criado com HTML, CSS e JavaScript.</p>
+                                        <div class="slide-buttons">
+                                            <a class="slide-btn slide-test-btn" href="https://demon-slayer-game-beta.vercel.app/" target="_blank"  title="Testar o site">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            </a>
+                                            <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/Demon-Slayer-Game" target="_blank" title="Ver repositório">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="slide-item" data-slide="item" data-index="2">
+                                <div class="slide-content">
+                                    <div class="slide-tools">
+                                        <img class="tool" src="assets/img/html-icon.png" alt="" title="HTML5">
+                                        <img class="tool" src="assets/img/css-icon.png" alt="" title="CSS3">
+                                        <img class="tool" src="assets/img/javascript-icon.png" alt="" title="JavaScript">
+                                    </div>
+                                    <img class="slide-image" src="assets/img/fruitbrainiacshowdown.png" alt="Fruit Brainiac Showdown">
+                                    <div class="slide-description">
+                                        <h3>Fruit Brainiac Showdown</h3>
+                                        <p class="slide-project-info">Jogo da memória um contra um, criado com HTML/CSS e JavaScript utilizando do paradigma de Programação Funcional</p>
+                                        <div class="slide-buttons">
+                                            <a class="slide-btn slide-test-btn" href="https://fruit-brainiac-showdown.netlify.app/" target="_blank" title="Testar o site">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            </a>
+                                            <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/Fruit-Brainiac-Showdown" target="_blank" title="Ver repositório">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="slide-item soon-box" data-slide="item" data-index="3">
+                                <div class="slide-content soon">
+                                    <h2>Veja Mais No GitHub</h2>
+                                    <a class="slide-btn slide-github-btn" href="https://www.github.com/JhonFXA" target="_blank"  title="Ver repositórios no Github">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <nav class="slide-controls" data-slide="controls-wrapper">
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================ CONTACT ================== -->
+            <section class="contact" id="contact">
+                <div class="top-header">
+                    <h2>Contato</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h3>Me Encontre</h3>
+                            <div class="contact-box">
+                                <p><i class="uil uil-envelope"></i> Email: jonathanbispo085@gmail.com</p>
+                                <p><i class="uil uil-phone"></i> Telefone: +55 (79) 98862-0575</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form" action="https://formsubmit.co/jonathanbispo085@gmail.com" method="post">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" id="name" name="name" class="input-field" placeholder="Name" autocomplete="off" required>
+                                    <input type="text" id="email" name="email" class="input-field" placeholder="Email" autocomplete="on" required>
+                                </div>
+                                <div class="text-area">
+                                    <textarea id="message" name="message" placeholder="Messagem"></textarea required>
+                                </div>
+                                <div class="form-button">
+                                    <button id="submit-button" type="submit" class="btn">Enviar <i class="uil uil-message"></i></button>
+                                </div>
+                            </div>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contact">
+                            <input type="hidden" name="_template" value="table">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul class="menu-footer">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <ul class="social-footer">
+                <li>
+                    <a title="GitHub" href="https://www.github.com/JhonFXA" target="_blank"><i class="uil uil-github-alt"></i></a>
+                </li>
+                <li>
+                    <a title="LinkedIn" href="" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                </li>
+            </ul>
+            
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home">JhonFX</a> - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
