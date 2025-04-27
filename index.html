@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Jonathan</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -84,8 +85,8 @@
                                 <li><img class="icon" aria-hidden="true" src="assets/img/css-icon.png" alt="">CSS</li>
                                 <li><i class="fa-brands fa-js"></i>JavaScript</li>
                                 <li><img class="icon" aria-hidden="true" src="assets/img/C-icon.png" alt="">C</li>
-                                <li><img class="icon" src="assets/img/java-icon.png" aria-hidden="true" alt="">Java</li>
-                                <li><i class="fa-brands fa-git-alt"></i>Git</li>
+                                <li><i class="fa-brands fa-node-js" style="color: lime"></i>Node.js</li>
+                                <li><i class="fa-brands fa-git-alt" style="color: red"></i>Git</li>
                                 <li><i class="fa-brands fa-github"></i>GitHub</li>
                                 <li><img class="icon" aria-hidden="true" src="assets/img/vscode-icon.png" alt="">VS Code</li>
                             </ul>
@@ -122,11 +123,13 @@
                                         <img class="tool" src="assets/img/javascript-icon.png" alt="" title="JavaScript">
                                     </div>
                                     <div class="slide-description">
-                                        <h3>Newsletter Form</h3>
-                                        <p class="slide-project-info">Formulário de cadastro com validador de email.</p>
+                                        <div class="description-text">
+                                            <h3>Newsletter Form</h3>
+                                            <p class="slide-project-info">Formulário de cadastro com validador de email.</p>
+                                        </div>
                                         <div class="slide-buttons">
                                             <a class="slide-btn slide-test-btn" href="https://jhonfxa.github.io/Newsletter-sign-up-form/" target="_blank" title="Testar o site">
-                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <i class="fa-solid fa-arrow-up-right-from-square trembling"></i>
                                             </a>
                                             <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/Newsletter-sign-up-form" target="_blank" title="Ver repositório">
                                                 <i class="fa-brands fa-github"></i>
@@ -145,11 +148,13 @@
                                     </div>
                                     <img class="slide-image" src="assets/img/demonslayergame.png" alt="Demon Slayer Game">
                                     <div class="slide-description">
-                                        <h3>Demon Slayer Game</h3>
-                                        <p class="slide-project-info">Projeto de jogo de Demon Slayer, criado com HTML, CSS e JavaScript.</p>
+                                        <div class="description-text">
+                                            <h3>Demon Slayer Game</h3>
+                                            <p class="slide-project-info">Projeto de jogo de Demon Slayer, criado com HTML, CSS e JavaScript.</p>
+                                        </div>
                                         <div class="slide-buttons">
                                             <a class="slide-btn slide-test-btn" href="https://demon-slayer-game-beta.vercel.app/" target="_blank"  title="Testar o site">
-                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <i class="fa-solid fa-arrow-up-right-from-square trembling"></i>
                                             </a>
                                             <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/Demon-Slayer-Game" target="_blank" title="Ver repositório">
                                                 <i class="fa-brands fa-github"></i>
@@ -168,11 +173,13 @@
                                     </div>
                                     <img class="slide-image" src="assets/img/fruitbrainiacshowdown.png" alt="Fruit Brainiac Showdown">
                                     <div class="slide-description">
-                                        <h3>Fruit Brainiac Showdown</h3>
-                                        <p class="slide-project-info">Jogo da memória um contra um, criado com HTML/CSS e JavaScript utilizando do paradigma de Programação Funcional</p>
+                                        <div class="description-text">
+                                            <h3>Fruit Brainiac Showdown</h3>
+                                            <p class="slide-project-info">Jogo da memória um contra um, criado com HTML/CSS e JavaScript utilizando do paradigma de Programação Funcional</p>
+                                        </div>
                                         <div class="slide-buttons">
                                             <a class="slide-btn slide-test-btn" href="https://fruit-brainiac-showdown.netlify.app/" target="_blank" title="Testar o site">
-                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <i class="fa-solid fa-arrow-up-right-from-square trembling"></i>
                                             </a>
                                             <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/Fruit-Brainiac-Showdown" target="_blank" title="Ver repositório">
                                                 <i class="fa-brands fa-github"></i>
@@ -181,16 +188,32 @@
                                     </div>
                                 </div>
                             </li>
-
-                            <li class="slide-item soon-box" data-slide="item" data-index="3">
-                                <div class="slide-content soon">
-                                    <h2>Veja Mais No GitHub</h2>
-                                    <a class="slide-btn slide-github-btn" href="https://www.github.com/JhonFXA" target="_blank"  title="Ver repositórios no Github">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
+                            <li class="slide-item" data-slide="item" data-index="3">
+                                <div class="slide-content">
+                                    <div class="slide-tools">
+                                        <img class="tool" src="assets/img/html-icon.png" alt="" title="HTML5">
+                                        <img class="tool" src="assets/img/css-icon.png" alt="" title="CSS3">
+                                        <img class="tool" src="assets/img/javascript-icon.png" alt="" title="JavaScript">
+                                        <i class="fa-brands fa-node-js" style="color: lime"></i>
+                                        
+                                    </div>
+                                    <img class="slide-image" src="assets/img/weatherlobby.png" alt="WeatherLobby">
+                                    <div class="slide-description">
+                                        <div class="description-text">
+                                            <h3>WeatherLobby</h3>
+                                            <p class="slide-project-info">Site para ver o clima de qualquer cidade do mundo, com informações atualizadas de temperatura, umidade e etc.</p>
+                                        </div>
+                                        <div class="slide-buttons">
+                                            <a class="slide-btn slide-test-btn" href="https://weatherlobby.netlify.app/" target="_blank" title="Testar o site">
+                                                <i class="fa-solid fa-arrow-up-right-from-square trembling"></i>
+                                            </a>
+                                            <a class="slide-btn slide-github-btn" href="https://github.com/JhonFXA/weatherlobby" target="_blank" title="Ver repositório">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
-
                         </ul>
                         <nav class="slide-controls" data-slide="controls-wrapper">
                         </nav>
@@ -214,7 +237,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <form class="form" action="https://formsubmit.co/jonathanbispo085@gmail.com" method="post">
+                        <form class="form" action="https://formsubmit.co/jonathanbispo085@gmail.com" method="post" netlify>
                             <div class="form-control">
                                 <div class="form-inputs">
                                     <input type="text" id="name" name="name" class="input-field" placeholder="Name" autocomplete="off" required>
@@ -227,7 +250,8 @@
                                     <button id="submit-button" type="submit" class="btn">Enviar <i class="uil uil-message"></i></button>
                                 </div>
                             </div>
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contact">
+                            <input type="hidden" name="_next" value="https://portfoliojhonfx.netlify.app/#contact">
+                            <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="table">
                         </form>
                     </div>

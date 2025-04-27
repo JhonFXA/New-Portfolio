@@ -29,6 +29,8 @@ function headerShadow(){
     }
 }
 
+
+
 window.onscroll = function(){
     headerShadow();
 };
@@ -282,13 +284,17 @@ function removeSlideClones(){
     slideItems = document.querySelectorAll('[data-slide="item"]');
 }
 
-let soonBox = document.querySelector(".soon-box");
 function changeGrid() {
+    var projectContainer = document.querySelector(".project-container");
     if(slideWrapper.classList.contains("grid")){
+        document.querySelectorAll(".slide-item").forEach(slideItem =>{
+            slideItem.style.cursor = "default";
+        })
+        projectContainer.style.background = "#515151";
+        projectContainer.style.boxShadow = "inset 0px 0px 20px 20px rgba(0, 0, 0, 0.55)";
         slideWrapper.classList.replace("grid", "slide-wrapper");
         state.canMove = true;
         state.autoPlay = true;
-        soonBox.style.display = "flex";
         createSlideClones();
         setVisibleSlide({index: state.currentSlideIndex, animate: true})
         navNextButton.style.display = "block";
@@ -296,11 +302,15 @@ function changeGrid() {
         controlsWrapper.style.display = "block";
         changeGridButton.querySelector("ion-icon").setAttribute('name', 'grid-outline');
     } else {
+        document.querySelectorAll(".slide-item").forEach(slideItem =>{
+            slideItem.style.cursor = "pointer";
+        })
+        projectContainer.style.background = "none";
+        projectContainer.style.boxShadow = "none";
         slideWrapper.classList.replace("slide-wrapper", "grid");
         state.canMove = false;
         state.autoPlay = false;
         removeSlideClones();
-        soonBox.style.display = "none";
         translateSlide({position: 0});
         clearInterval(slideInterval);
         slideList.style.transition = 'none';
