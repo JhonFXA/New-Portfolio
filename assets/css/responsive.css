@@ -1,5 +1,5 @@
 /* ------------ MEDIA QUERY == 900px ------------- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 
     .nav-menu.responsive {
         left: 0;
@@ -119,7 +119,7 @@
 
 
     .project-container {
-        height: 400px;
+        min-height: 400px;
     }
 
 
@@ -140,22 +140,22 @@
     .soon h2 {
         font-size: 20px;
     }
-
-    .grid {
-        height: 300px;
-    }
     
     .grid .slide-list {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     
     .grid .slide-item {
-        width: 200px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
     }
 
     .form-inputs{
         flex-direction: column;
+    }
+
+    .sp-about-img {
+       display: none;
     }
 
 }
@@ -203,13 +203,7 @@
     }
     
     .grid {
-        margin-top: 10px;
         width: 100%;
-    }
-
-    .grid .slide-item {
-        width: 200px;
-        height: 100px;
     }
     
     .grid .slide-list {
