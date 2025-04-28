@@ -164,6 +164,14 @@
 
 @media only screen and (max-width: 540px){
 
+    .featured-image img{
+        height:200px !important;
+    }
+
+    .featured-name {
+        font-size: 18px;
+    }
+
     .scroll-icon-box {
         bottom: 20px;
         left: 70%;
@@ -201,12 +209,22 @@
         padding: 5px 15px;
         border-radius: 5px;
     }
-    
-    .grid {
-        width: 100%;
-    }
-    
+
     .grid .slide-list {
         grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .menu-footer{
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .contact-info{
+        font-size: 14px;
+    }
+
+    .bottom-footer{
+        font-size: 12px;
     }
 }
