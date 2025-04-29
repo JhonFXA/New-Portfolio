@@ -303,6 +303,7 @@ main {
     left: -120px;
     bottom: 0;
     z-index: 1;
+    user-select: none;
 }
 
 .row {
